@@ -1,9 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32126.315
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitect.Api", "OnionArchitect.Api\OnionArchitect.Api.csproj", "{0328B0B1-BDAE-441F-B2FA-43C3100FFFDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitect.Service", "OnionArchitect.Service\OnionArchitect.Service.csproj", "{7D4E72E0-729E-445E-95DA-7E12C3EF70F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitect.Domain", "OnionArchitect.Domain\OnionArchitect.Domain.csproj", "{CF184742-D494-4A04-A78C-8CC13B324CB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitect.DataAccess", "OnionArchitect.DataAccess\OnionArchitect.DataAccess.csproj", "{A2726C6F-378F-49D5-BB45-72D9B0C4B0CF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0328B0B1-BDAE-441F-B2FA-43C3100FFFDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0328B0B1-BDAE-441F-B2FA-43C3100FFFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0328B0B1-BDAE-441F-B2FA-43C3100FFFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0328B0B1-BDAE-441F-B2FA-43C3100FFFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D4E72E0-729E-445E-95DA-7E12C3EF70F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4E72E0-729E-445E-95DA-7E12C3EF70F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4E72E0-729E-445E-95DA-7E12C3EF70F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4E72E0-729E-445E-95DA-7E12C3EF70F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF184742-D494-4A04-A78C-8CC13B324CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF184742-D494-4A04-A78C-8CC13B324CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF184742-D494-4A04-A78C-8CC13B324CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF184742-D494-4A04-A78C-8CC13B324CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2726C6F-378F-49D5-BB45-72D9B0C4B0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2726C6F-378F-49D5-BB45-72D9B0C4B0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2726C6F-378F-49D5-BB45-72D9B0C4B0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2726C6F-378F-49D5-BB45-72D9B0C4B0CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
