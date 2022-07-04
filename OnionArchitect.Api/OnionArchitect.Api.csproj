@@ -16,4 +16,8 @@
     <Folder Include="Common\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OnionArchitect.Service\OnionArchitect.Service.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnionArchitect.Utility.Common
 {
-    internal class Function
+    public class Function
     {
     }
 }

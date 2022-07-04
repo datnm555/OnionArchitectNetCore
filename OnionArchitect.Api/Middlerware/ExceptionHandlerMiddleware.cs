@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using OnionArchitect.Service.Exceptions;
 using System.Net;
 
 namespace OnionArchitect.Api.Middlerware
@@ -34,20 +35,20 @@ namespace OnionArchitect.Api.Middlerware
 
             switch (ex)
             {
-                //case ValidationException validationException:
-                //    httpStatusCode = HttpStatusCode.BadRequest;
-                //    result = JsonConvert.SerializeObject(Errors);
-                //    break;
-                //case BadRequestException badRequestException:
-                //    httpStatusCode = HttpStatusCode.BadRequest;
-                //    result = badRequestException.Message;
-                //    break;
-                //case NotFoundException notFoundException:
-                //    httpStatusCode = HttpStatusCode.NotFound;
-                //    break;
-                //case Exception ex:
-                //    httpStatusCode = HttpStatusCode.BadRequest;
-                //    break;
+                case ValidationException validationException:
+                    httpStatusCode = HttpStatusCode.BadRequest;
+                    result = JsonConvert.SerializeObject(validationException.ValdationErrors);
+                    break;
+                case BadRequestException badRequestException:
+                    httpStatusCode = HttpStatusCode.BadRequest;
+                    result = badRequestException.Message;
+                    break;
+                case NotFoundException notFoundException:
+                    httpStatusCode = HttpStatusCode.NotFound;
+                    break;
+                case Exception exception:
+                    httpStatusCode = HttpStatusCode.BadRequest;
+                    break;
             }
 
             httpContext.Response.StatusCode = (int)httpStatusCode;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnionArchitect.Utility.Paging
 {
-    internal class PagedList
+    public class PagedList
     {
     }
 }

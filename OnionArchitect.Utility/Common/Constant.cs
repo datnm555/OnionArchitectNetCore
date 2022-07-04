@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnionArchitect.Utility.Common
 {
-    internal class Constant
+    public class Constant
     {
     }
 }

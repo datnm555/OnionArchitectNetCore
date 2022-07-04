@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OnionArchitect.Service.Exceptions
 {
-    internal class ValidationException : ApplicationException
+    public class ValidationException : ApplicationException
     {
         public List<string> ValdationErrors { get; set; }
 
